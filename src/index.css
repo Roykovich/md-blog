@@ -1,13 +1,35 @@
-body {
+/* 
+  Posible color palettes
+  https://coolors.co/palette/757bc8-8187dc-8e94f2-9fa0ff-ada7ff-bbadff-cbb2fe-dab6fc-ddbdfc-e0c3fc
+  https://coolors.co/palette/97dffc-93caf6-8eb5f0-858ae3-7364d2-613dc1-5829a7-4e148c-461177-3d0e61
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+*,
+html {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Ubuntu", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*  Here I will put some default values of my design system */
+:root {
+  --box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+}
+
+.light {
+  --background-color: #cbb2fe;
+  --accent-background-color: #dab6fc;
+  --normal-font-color: #010101;
+}
+
+.dark {
+  --background-color: #757bc8;
+  --accent-background-color: #8e94f2;
+  --normal-font-color: #f1f1f1;
 }
