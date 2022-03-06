@@ -1,0 +1,43 @@
+#previewer {
+  border: red 2px solid;
+  grid-area: 2 / 2 / 3 / 3;
+  padding: 1em;
+  font-family: sans-serif;
+}
+
+#previewer h1 {
+  border-bottom: 2px solid var(--normal-font-color);
+}
+
+#previewer h2 {
+  border-bottom: 1px solid var(--normal-font-color);
+}
+
+#previewer blockquote {
+  border-left: 3px solid var(--normal-font-color);
+  color: var(--normal-font-color);
+  padding-left: 5px;
+  margin-left: 25px;
+}
+
+#previewer code {
+  padding: 3px;
+  background: #2e2e2e;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+#previewer pre {
+  display: block;
+  overflow: auto;
+  background: #2e2e2e;
+  padding: 5px;
+  line-height: 1.2;
+}
+
+#previewer img {
+  display: block;
+  max-width: 90%;
+  margin: 2rem auto;
+}
