@@ -11,13 +11,19 @@ renderer.link = (href, title, text) => {
   return `<a target="_blank" href="${href}">${text}</a>`;
 };
 
-const Previewer = ({ postContent }) => {
+const Previewer = ({
+  postContent,
+  customRef: previewerRef,
+  onScrollHandler,
+}) => {
   return (
     <div
       id="previewer"
       dangerouslySetInnerHTML={{
         __html: marked(postContent, { renderer }),
       }}
+      ref={previewerRef}
+      onScroll={onScrollHandler("previewer")}
     />
   );
 };
