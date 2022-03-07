@@ -1,21 +1,31 @@
 #previewer {
-  border: red 2px solid;
   grid-area: 2 / 2 / 3 / 3;
+
   padding: 1em;
+  background-color: #f1f1f1;
+  box-shadow: var(--box-shadow);
+
+  color: #2e2e2e;
   font-family: sans-serif;
+
+  /* This properties are literally god itself. */
+  overflow-wrap: break-word;
+  word-break: break-all;
+
+  overflow-y: scroll;
 }
 
 #previewer h1 {
-  border-bottom: 2px solid var(--normal-font-color);
+  border-bottom: 2px solid #2e2e2e;
 }
 
 #previewer h2 {
-  border-bottom: 1px solid var(--normal-font-color);
+  border-bottom: 1px solid #2e2e2e;
 }
 
 #previewer blockquote {
-  border-left: 3px solid var(--normal-font-color);
-  color: var(--normal-font-color);
+  border-left: 3px solid #2e2e2e;
+  color: #2e2e2e;
   padding-left: 5px;
   margin-left: 25px;
 }
@@ -40,4 +50,17 @@
   display: block;
   max-width: 90%;
   margin: 2rem auto;
+}
+
+#previewer::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+#previewer::-webkit-scrollbar-track {
+  background: none;
+}
+
+#previewer::-webkit-scrollbar-thumb {
+  background-color: darkgray;
+  width: 0.25em;
 }
