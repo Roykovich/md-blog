@@ -1,5 +1,4 @@
 import { useState, useRef } from "react";
-import ButtonHandler from "./ButtonHandler";
 import TextEditor from "./TextEditor";
 import Previewer from "./Previewer";
 import "./NewPost.css";
@@ -33,7 +32,6 @@ const NewPost = () => {
 
   return (
     <section id="editor">
-      <ButtonHandler />
       <TextEditor
         postContent={postContent}
         textAreaHandler={textAreaHandler}
