@@ -4,8 +4,3 @@
   background-color: var(--background-color);
   color: var(--normal-font-color);
 }
-
-.testerDiv {
-  background-color: var(--accent-background-color);
-  box-shadow: var(--box-shadow);
-}
