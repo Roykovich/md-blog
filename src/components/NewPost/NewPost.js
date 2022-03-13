@@ -3,9 +3,25 @@ import TextEditor from "./TextEditor";
 import Previewer from "./Previewer";
 import "./NewPost.css";
 
-const DEFAULT_TEXTAREA = `# Enter your title here
+const DEFAULT_TEXTAREA = `# This is a title
+## This is a sub-title
+### Idk another title but even smaller
 
-Add some text here
+This is inline code \`<p>Hello world</p>\` and **here** is a _spooky_ [link](https://facebook.com)
+
+\`\`\`
+// too lazy to write more stuff here
+console.log("multine codeblock")
+\`\`\`
+
+- this
+  - is
+    - a
+      - list
+
+> Practice makes the master.
+
+![Vaporwave](https://i.pinimg.com/originals/4a/71/61/4a7161de9f2939090c2b6aea0ca967da.jpg)
 `;
 
 const NewPost = () => {
