@@ -11,12 +11,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
-  margin: 0;
 }
 
 html,
 body {
   overflow: hidden;
+  margin: 0;
 }
 /*  Here I will put some default values of my design system */
 :root {
