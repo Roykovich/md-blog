@@ -1,10 +1,7 @@
 import { marked } from "marked";
 import "./Previewer.css";
 
-marked.setOptions({
-  breaks: true,
-  gfm: true,
-});
+marked.setOptions({ gfm: true, breaks: true });
 
 const renderer = new marked.Renderer();
 renderer.link = (href, title, text) => {

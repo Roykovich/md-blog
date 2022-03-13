@@ -1,5 +1,5 @@
 #text-editor {
-  grid-area: 2 / 1 / 3 / 2;
+  grid-area: editor;
   width: 100%;
   box-shadow: var(--box-shadow);
   font-family: sans-serif;
