@@ -1,0 +1,12 @@
+nav {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  text-transform: uppercase;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  max-width: 100%;
+  background-color: var(--accent-background-color);
+  box-shadow: var(--box-shadow);
+}
