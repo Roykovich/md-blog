@@ -1,0 +1,34 @@
+#home {
+  display: grid;
+  grid-template-columns: 1fr 20%;
+  width: 100%;
+  height: 100%;
+}
+
+#home > aside,
+#content-display {
+  border: 1px solid red;
+}
+
+#home > #content-display {
+  padding: 0 0.5em;
+}
+
+#home > #content-display:first-child {
+  padding-top: 1em;
+}
+
+#home > aside {
+  position: sticky;
+  background-color: var(--accent-background-color);
+}
+
+@media screen and (max-width: 767px) {
+  #home {
+    grid-template-columns: 1fr;
+  }
+
+  #home aside {
+    display: none;
+  }
+}
